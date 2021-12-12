@@ -1,0 +1,717 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+  letter-spacing: .5;
+}
+
+h1,
+h2,
+h3 {
+  color: #F1C40F;
+}
+
+.knowUs h2,
+.philosophy h3,
+.apartments h2,
+.contactUs h2 {
+  font-size: 2rem;
+}
+
+.light-text {
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.container,
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fullWidth {
+  background-color: #f5f3f3;
+  height: 113px;
+}
+
+nav {
+  background-color: #f5f3f3;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  width: 250px;
+}
+
+.nav-items {
+  width: 900px;
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-right: 30px;
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-items li {
+  list-style: none;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.nav-items a:hover,
+.nav-items a:focus {
+  color: #F1C40F;
+  border-bottom: #F1C40F 2px solid;
+}
+
+.section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 9px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 850px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  margin-left: -20px;
+  z-index: -1;
+}
+
+.slideshow-container img {
+  width: 850px;
+  height: 500px;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Make the images invisible by default */
+.coverImg {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+.amd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro {
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.intro h1,
+.intro h2,
+.intro p,
+.intro ul {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.aboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutUs h2,
+.aboutUs h3 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.aboutUs p {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.knowUs {
+  width: 70%;
+}
+
+.philosophy {
+  width: 70%;
+  margin-left: 30%;
+}
+
+.apartments {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.apartmentsIntro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.apartment-box {
+  width: 380px;
+}
+
+.apartment-box p,
+.apartment-box h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.apartment-box img {
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.viewApartments {
+  margin-left: 0;
+  margin-top: 50px;
+}
+
+.check-btn {
+  background-color: #F1C40F;
+  text-decoration: none;
+  color: #1a1515;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 30px;
+}
+
+.check-btn:hover,
+.check-btn:focus {
+  background-color: #dbdada;
+}
+
+.homesFeatures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#mainFeatures {
+  border-right: 3px solid #e2e1e1;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+#mainFeatures ul {
+  margin: 0;
+  padding: 0;
+}
+
+#mainFeatures li {
+  list-style: none;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+#mainFeatures a {
+  text-decoration: none;
+  color: black;
+}
+
+#mainFeatures a:hover,
+#mainFeatures a:focus {
+  border-bottom: #F1C40F 2px solid;
+  color: #F1C40F;
+}
+
+#listFeatures {
+  width: 950px;
+  margin-right: 20px;
+}
+
+.itemBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6.5px;
+  margin-left: 10px;
+  width: 905px;
+}
+
+.careItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px;
+  width: 223px;
+}
+
+.careItem p {
+  margin: 0;
+  padding: 0;
+}
+
+.careItemImg {
+  margin-right: 10px;
+}
+
+.itemBoxHidden {
+  display: none;
+}
+
+.itemBoxVisible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.check-apt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+}
+
+.contactUs {
+  margin: 30px 0;
+}
+
+.contactUs h2 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.contactItems {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactBox {
+  width: 250px;
+  padding: 20px 10px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactBoxItem {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.contactBoxItem img {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+
+.img-color {
+  color: yellow;
+}
+
+.map {
+  padding: 20px;
+  background-color: #f5f3f3;
+}
+
+footer {
+  background-color: #f5f3f3;
+  padding: 30px 20px;
+}
+
+.footer {
+  background-color: #f5f3f3;
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.footer-content {
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-content li {
+  list-style: none;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-content a:hover,
+.footer-content a:focus {
+  border-bottom: #F1C40F 2px solid;
+  color: #F1C40F;
+  cursor: pointer;
+}
+
+.socialMedia {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sm-Icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instagram,
+.faceook {
+  margin-left: 10px;
+}
+
+.instagram:hover,
+.faceook:hover {
+  cursor: pointer;
+}
+
+.devName {
+  border-top: 2px dotted;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.0em;
+  letter-spacing: 1px;
+  padding: 40px;
+  color: 000;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.img-box {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 10px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+/* The Modal (background) */
+.modal,
+.modal2,
+.modal3 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10px auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  /* Could be more or less, depending on screen size */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+          animation-name: animatetop;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+}
+
+/* The Close Button */
+.close,
+.close2,
+.close3 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close2:hover,
+.close3:hover,
+.close:focus,
+.close2:focus,
+.close3:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
